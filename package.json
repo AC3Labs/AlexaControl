@@ -1,0 +1,26 @@
+{
+  "name": "alexacontrol",
+  "version": "1.4.1",
+  "description": "Touch Portal plugin that controls Amazon Echo devices through alexa-remote2 and Voice Monkey.",
+  "main": "src/index.js",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.15.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint .",
+    "check": "node scripts/check.js",
+    "test": "node --test --test-reporter=spec test/",
+    "verify": "npm run check && npm run lint && npm test",
+    "package": "node scripts/package.js"
+  },
+  "dependencies": {
+    "alexa-remote2": "8.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.10.0"
+  }
+}
